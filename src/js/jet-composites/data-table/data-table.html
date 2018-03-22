@@ -1,15 +1,21 @@
 <h2> Item Information </h2>
 <hr>
-<table id="table" summary="Items List" aria-label="Purchase Orders Table"
-       data-bind="ojComponent: {component: 'ojTable', 
-                                data: datasource, 
-                                columnsDefault: {sortable: 'none'}, 
-                                columns: [{headerText: 'ItemNo', 
-                                           field: 'ItemNo'},
-                                          {headerText: 'Cost', 
-                                           field: 'Cost'},
-                                          {headerText: 'Qty', 
-                                           field: 'Qty'},
-                                          {headerText: 'Status', 
-                                           field: 'Status'}]}">
-</table>
+<div class="oj-flex oj-lg-align-items-center">
+    <div class="oj-flex-item"></div>
+    <!-- <label for="inputPassword3" class="col-md-2 col-form-label" data-bind="text: label"></label> -->
+    <div class="j-form oj-sm-12 oj-lg-4 oj-md-6 oj-flex-item">
+        <table id="table" summary="Items List" aria-label="Purchase Orders Table" data-bind="ojComponent: {component: 'ojTable', 
+                                 data: datasource, 
+                                 columnsDefault: {sortable: 'none'}, 
+                                 columns: [{headerText: 'ItemNo', 
+                                            field: 'ItemNo'},
+                                           {headerText: 'Cost', 
+                                            field: 'Cost'},
+                                           {headerText: 'Qty', 
+                                            field: 'Qty'},
+                                           {headerText: 'Status', 
+                                            field: 'Status'}]}">
+        </table>
+    </div>
+</div>
+</div>

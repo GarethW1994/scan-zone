@@ -232,6 +232,7 @@ var fsm = new StateMachine({
         },
         onErrors: async function(error) {
             $('#scanErrorElement').removeClass("hidden");
+            // this.onStartQRScanner();
             self.scanErrors(error);
             setTimeout(() => $('#scanErrorElement').addClass('hidden'), 3500);
         }
